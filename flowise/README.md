@@ -18,6 +18,7 @@ enjoy, flowise GUI http://localhost:3000
 - let's prepare embeddings (it can take almost 2 minutes, to index json file)
 - then you can use chat
 - embed link into index.html of the demo app
+- change with <your chatflowid> in index.html, or take link from flowise UI
 - open index.html in browser, chat button is at bootom right corner
 
 compared to the use of openai embeddings, update of embeddings is done locally in chrom vector database, and used by flowise chatflow
