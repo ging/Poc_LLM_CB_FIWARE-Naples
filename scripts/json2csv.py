@@ -7,7 +7,7 @@ def read_ngsild_entities(json_file, csv_file):
         entities = json.load(file)
 
     with open(csv_file, 'w', newline='', encoding='utf-8') as csvfile:
-        fieldnames = ['id', 'type', 'title', 'relevance', 'image', 'location_type', 'coordinates', 'price', 'occupancy', 'description']
+        fieldnames = ['id', 'type', 'title', 'relevance', 'image', 'location_type', 'coordinates', 'price', 'description', 'capacity', 'occupancy']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
         writer.writeheader()
@@ -21,8 +21,9 @@ def read_ngsild_entities(json_file, csv_file):
                 'location_type': entity.get('location', {}).get('value', {}).get('type', ''),
                 'coordinates': ','.join(map(str, entity.get('location', {}).get('value', {}).get('coordinates', []))),
                 'price': entity.get('price', {}).get('value', ''),
-                'occupancy': entity.get('occupancy', {}).get('value', ''),
-                'description': entity.get('description', {}).get('value', '')
+                'description': entity.get('description', {}).get('value', ''),
+                'capacity': entity.get('capacity', {}).get('value', ''),
+                'occupancy': entity.get('occupancy', {}).get('value', '')
             }
             writer.writerow(row)
 

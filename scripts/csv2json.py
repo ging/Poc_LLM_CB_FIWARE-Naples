@@ -16,13 +16,13 @@ def csv_to_ngsild(csv_file, json_file):
                     "type": "Property",
                     "value": row['title']
                 },
-                "image": {
-                    "type": "Property",
-                    "value": row['image'] if row['image'] else None
-                },
                 "relevance": {
                     "type": "Property",
                     "value": int(row['relevance']) if row['relevance'] else None
+                },
+                "image": {
+                    "type": "Property",
+                    "value": row['image'] if row['image'] else None
                 },
                 "location": {
                     "type": "GeoProperty",
@@ -35,14 +35,18 @@ def csv_to_ngsild(csv_file, json_file):
                     "type": "Property",
                     "value": row['price']
                 },
-                "occupancy": {
-                    "type": "Property",
-                    "value": row['occupancy']
-                },
                 "description": {
                     "type": "Property",
                     "value": row['description']
-                }
+                },
+                "capacity": {
+                    "type": "Property",
+                    "value": int(row['capacity']) if row['capacity'] else None
+                },
+                "occupancy": {
+                    "type": "Property",
+                    "value": int(row['occupancy']) if row['occupancy'] else None
+                },
             }
 
             # Remove the relevance field if it is None
@@ -52,6 +56,14 @@ def csv_to_ngsild(csv_file, json_file):
             # Remove the image field if it is None
             if entity["image"]["value"] is None:
                 del entity["image"]
+                
+            # Remove the capacity field if it is None
+            if entity["capacity"]["value"] is None:
+                del entity["capacity"]
+            
+            # Remove the occupancy field if it is None
+            if entity["occupancy"]["value"] is None:
+                del entity["occupancy"]
                 
             entities.append(entity)
     
