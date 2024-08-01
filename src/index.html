@@ -30,7 +30,26 @@
       <button id="sendBTN">Send</button>
     </div>
   </div>
+  
+  
+  <div class="container">
+    <label for="limit">Limit:</label>
+    <input type="range" id="limit" name="limit" min="1" max="1000" value="10" onchange=window.chatApp.updateMap()>
+    <span id="limitValue">10</span>
+  </div>
+  
 </div>
+
+<!-- JavaScript -->
+<script>
+  function updateLimitValue() {
+    var limit = document.getElementById("limit").value;
+    document.getElementById("limitValue").innerHTML = limit;
+  }
+
+  document.getElementById("limit").addEventListener("input", updateLimitValue);
+</script>
+
 
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <!-- <script type="module" src="js/map.js"></script>-->

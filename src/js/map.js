@@ -12,8 +12,10 @@ L.tileLayer('http://localhost:8080/styles/basic-preview/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
-window.chatApp.getPoIs = async function(coord=[], limit=10) {
+window.chatApp.getPoIs = async function(coord=[]) {
   var query="";
+  var limit = document.getElementById("limit").value;
+  console.log('query con limit: ', limit);
 
   // NGSILD doesn't support ordering. See:
   // https://stackoverflow.com/questions/75106624/ordering-results-by-field-using-orion-ngsi-ld
@@ -113,5 +115,11 @@ async function getZoomCoordinates () {
 }
 })();
 
+
+
+
 window.chatApp.updateMap();
 map.on('moveend', window.chatApp.updateMap);
+
+// Add an event listener to the limit input field to update the PoIs when the limit changes
+//document.getElementById("limit").addEventListener('onchange', window.chatApp.updateMap);
