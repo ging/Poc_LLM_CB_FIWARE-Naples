@@ -2,7 +2,7 @@ import csv
 import json
 import sys
 
-def csv_to_ngsild(csv_file, json_file):
+def csv_to_ngsild(csv_file, json_file, type="v2"):
     entities = []
     
     with open(csv_file, 'r', encoding='utf-8') as csvfile:
@@ -13,38 +13,38 @@ def csv_to_ngsild(csv_file, json_file):
                 "id": row['id'],
                 "type": row['type'],
                 "title": {
-                    "type": "Property",
+                    "type": "Text" if type=="v2" else "Property",
                     "value": row['title']
                 },
                 "relevance": {
-                    "type": "Property",
+                    "type": "Integer" if type=="v2" else "Property",
                     "value": int(row['relevance']) if row['relevance'] else None
                 },
                 "image": {
-                    "type": "Property",
+                    "type": "Text" if type=="v2" else "Property",
                     "value": row['image'] if row['image'] else None
                 },
                 "location": {
-                    "type": "GeoProperty",
+                    "type": "geo:json" if type=="v2" else "GeoProperty",
                     "value": {
                         "type": row['location_type'],
                         "coordinates": list(map(float, row['coordinates'].split(',')))
                     }
                 },
                 "price": {
-                    "type": "Property",
+                    "type": "Text" if type=="v2" else "Property",
                     "value": row['price']
                 },
                 "description": {
-                    "type": "Property",
+                    "type": "Text" if type=="v2" else "Property",
                     "value": row['description']
                 },
                 "capacity": {
-                    "type": "Property",
+                    "type": "Integer" if type=="v2" else "Property",
                     "value": int(row['capacity']) if row['capacity'] else None
                 },
                 "occupancy": {
-                    "type": "Property",
+                    "type": "Integer" if type=="v2" else "Property",
                     "value": int(row['occupancy']) if row['occupancy'] else None
                 },
             }
@@ -71,11 +71,15 @@ def csv_to_ngsild(csv_file, json_file):
         json.dump(entities, jsonfile, ensure_ascii=False, indent=2)
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print("Usage: python script.py <input_csv_file> <output_json_file>")
+    if len(sys.argv) <= 3 or len(sys.argv) > 4:
+        print("Usage: python script.py <input_csv_file> <output_json_file> [v2]")
         sys.exit(1)
 
     csv_file = sys.argv[1]
     json_file = sys.argv[2]
-    
-    csv_to_ngsild(csv_file, json_file)
+
+    type = "ld"
+    if len(sys.argv) == 4:
+        type = sys.argv[3]
+
+    csv_to_ngsild(csv_file, json_file, type)

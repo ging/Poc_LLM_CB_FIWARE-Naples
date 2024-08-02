@@ -12,7 +12,7 @@ L.tileLayer('http://localhost:8080/styles/basic-preview/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
-window.chatApp.getPoIs = async function(coord=[]) {
+window.chatApp.getPoIs = async function(coord=[], type="v2") {
   var query="";
   var limit = document.getElementById("limit").value;
   console.log('query con limit: ', limit);
@@ -27,7 +27,7 @@ window.chatApp.getPoIs = async function(coord=[]) {
   }
 
   // Constructing the coordinates string
-  const coordinates = [[
+  var coordinates = [[
     [coord[0], coord[1]],
     [coord[2], coord[3]],
     [coord[4], coord[5]],
@@ -35,10 +35,23 @@ window.chatApp.getPoIs = async function(coord=[]) {
     [coord[0], coord[1]]
   ]];
 
+  if (type === "v2") {
+  coordinates =
+   `${coord[0]},${coord[1]};${coord[2]},${coord[3]};${coord[4]},${coord[5]};${coord[6]},${coord[7]};${coord[0]},${coord[1]}`;
+  }
+
   // filter by GeoJSON polygon
   // see: https://www.etsi.org/deliver/etsi_gs/CIM/001_099/009/01.08.01_60/gs_cim009v010801p.pdf
   const coordinatesString = JSON.stringify(coordinates);
   query = `&georel=within&geometry=Polygon&coordinates=${encodeURIComponent(coordinatesString)}`;
+
+  //NGSIv2 query
+  if(type === "v2") {
+    url = 'http://localhost:1027/http://fiware-orion:1026/v2/entities?type=PoI&limit=' + limit + '&orderBy=' + orderBy;
+    query = '&georel=within&geometry=polygon&coords=' + coordinates;
+  }
+
+
   url = url + query;
   console.log('url:', url);
   try {
