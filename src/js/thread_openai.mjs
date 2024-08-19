@@ -17,7 +17,7 @@ export async function createThreadAssistant() {
   console.log(`Thread has been created with the all PoIs: ${monuments.length}`)
   //print the PoIs using a forEach loop and with the title and location and numbered
   monuments.forEach(function(entity, index) {
-    console.log(`${index + 1}. ${entity.title.value} at ${entity.location.value.coordinates}`);
+    console.log(`${index + 1}. ${entity.title} at ${entity.location.coordinates}`);
   });
 
   // this should change dinamically through the conversation

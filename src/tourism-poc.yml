@@ -46,7 +46,7 @@ services:
     expose:
       - "${MONGO_DB_PORT}"
     ports:
-      - "${MONGO_DB_PORT}:${MONGO_DB_PORT}" # localhost:27017
+      - "27018:${MONGO_DB_PORT}" # localhost:27017 // 27018 to avoid conflicts with local MongoDB
     networks:
       - default
     volumes:
@@ -65,14 +65,14 @@ services:
     platform: linux/amd64
     image: quay.io/fiware/orion-ld:${ORION_LD_VERSION}
     hostname: orion
-    container_name: fiware-orion
+    container_name: fiware-orion-ld
     depends_on:
       - mongo-db
     networks:
       - default
     ports:
       - ${EXPOSED_PORT:-1026}:${ORION_LD_PORT:-1026} # localhost:1026
-    command: -dbhost mongo-db -logLevel DEBUG -forwarding -experimental
+    command: -dbhost mongo-db -logLevel DEBUG -forwarding -experimental -mongocOnly
     healthcheck:
       test: curl --fail -s http://orion:${ORION_LD_PORT}/version || exit 1
       interval: 30s
