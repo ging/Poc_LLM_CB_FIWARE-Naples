@@ -29,13 +29,12 @@
       <textarea id='ttext' rows="0" cols="50" placeholder="Ask a question..."></textarea>
       <button id="sendBTN">Send</button>
     </div>
-  </div>
-  
-  
-  <div class="container">
-    <label for="limit">Limit:</label>
-    <input type="range" id="limit" name="limit" min="1" max="1000" value="10" onchange=window.chatApp.updateMap()>
-    <span id="limitValue">10</span>
+  <div class="config">
+    <div class="slider">
+      <label for="limit">Limit:</label>
+      <input type="range" id="limit" name="limit" min="1" max="1000" value="10" onchange=window.chatApp.updateMap()>
+      <span id="limitValue">10</span>
+    </div>
   </div>
   
 </div>
