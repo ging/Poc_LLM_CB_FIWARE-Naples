@@ -77,6 +77,24 @@ services:
       test: curl --fail -s http://orion:${ORION_LD_PORT}/version || exit 1
       interval: 30s
 
+  # Orion is an NGSI-v2 context broker
+  orion-v2:
+    labels:
+      org.fiware: 'tutorial'
+    image: quay.io/fiware/orion:${ORION_VERSION}
+    hostname: orion-v2
+    container_name: fiware-orion-v2
+    depends_on:
+      - mongo-db
+    networks:
+      - default
+    ports:
+      - "${ORION_PORT}:1026"
+    command: -dbURI mongodb://mongo-db -logLevel DEBUG -noCache
+    healthcheck:
+      test: curl --fail -s http://orion:${ORION_PORT}/version || exit 1
+      interval: 5s
+
   tileserver:
     labels:
       org.fiware: 'tutorial'

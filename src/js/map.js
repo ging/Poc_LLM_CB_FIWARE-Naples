@@ -12,21 +12,28 @@ L.tileLayer('http://localhost:8080/styles/basic-preview/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
-window.chatApp.getPoIs = async function(coord=[], type="v2") {
+window.chatApp.getPoIs = async function(coord=[], fiwareService="ld") {
   var query="";
   var limit = document.getElementById("limit").value;
+  var orion_port = '1026'; //fiwareService === "v2" ? "1025" : "1026";
+  var orion_url = 'http://localhost:1027/http://fiware-orion-' + fiwareService + ':' + orion_port;
+
   console.log('query con limit: ', limit);
 
   // NGSILD doesn't support ordering. See:
   // https://stackoverflow.com/questions/75106624/ordering-results-by-field-using-orion-ngsi-ld
+  // however, there is a new commit under request that solves this issue:
+  // https://github.com/FIWARE/context.Orion-LD/pull/1656/commits/0bf03678877a54000f8cc6520975ab5bf65838d5
   var orderBy = "relevance";
-  var url = 'http://localhost:1027/http://fiware-orion:1026/ngsi-ld/v1/entities?type=PoI&limit=' + limit + '&orderBy=' + orderBy;
+  var url = orion_url + '/ngsi-ld/v1/entities?local=true&type=PoI&options=concise&limit=' + limit + '&orderBy=' + orderBy;
 
   if(coord) {
     coord = await getZoomCoordinates();
+    console.log('coord:', coord);
   }
 
-  // Constructing the coordinates string
+  // Constructing the coordinates string for LD
+  coord = coord.coord;
   var coordinates = [[
     [coord[0], coord[1]],
     [coord[2], coord[3]],
@@ -35,22 +42,22 @@ window.chatApp.getPoIs = async function(coord=[], type="v2") {
     [coord[0], coord[1]]
   ]];
 
-  if (type === "v2") {
-  coordinates =
-   `${coord[0]},${coord[1]};${coord[2]},${coord[3]};${coord[4]},${coord[5]};${coord[6]},${coord[7]};${coord[0]},${coord[1]}`;
-  }
-
-  // filter by GeoJSON polygon
+  // by default ld - filter by GeoJSON polygon
   // see: https://www.etsi.org/deliver/etsi_gs/CIM/001_099/009/01.08.01_60/gs_cim009v010801p.pdf
   const coordinatesString = JSON.stringify(coordinates);
   query = `&georel=within&geometry=Polygon&coordinates=${encodeURIComponent(coordinatesString)}`;
 
   //NGSIv2 query
-  if(type === "v2") {
-    url = 'http://localhost:1027/http://fiware-orion:1026/v2/entities?type=PoI&limit=' + limit + '&orderBy=' + orderBy;
-    query = '&georel=within&geometry=polygon&coords=' + coordinates;
+  // see geoquery references here:
+  // https://github.com/telefonicaid/fiware-orion/blob/master/doc/manuals/orion-api.md#Geographical%20Queries
+  if(fiwareService === "v2") {
+    coordinates =
+   `${coord[1]},${coord[0]};${coord[3]},${coord[2]};${coord[5]},${coord[4]};${coord[7]},${coord[6]};${coord[1]},${coord[0]}`;
+    console.log('coordinates: -> ', coordinates);
+    url = orion_url + '/v2/entities?type=PoI&options=keyValues&limit=' + limit + '&orderBy=' + orderBy;
+    query = '&georel=coveredBy&geometry=polygon&coords=' + coordinates;
+    //query = '&georel=near;maxDistance:10000&geometry=point&coords=' + coord[1] + ',' + coord[0];
   }
-
 
   url = url + query;
   console.log('url:', url);
@@ -61,7 +68,8 @@ window.chatApp.getPoIs = async function(coord=[], type="v2") {
               {
                 method: 'GET',
                 headers: {
-                  'origin': '*'
+                  'origin': '*',
+                  'fiware-service': fiwareService,
                 }
               })
     if (!response.ok) {
@@ -74,6 +82,7 @@ window.chatApp.getPoIs = async function(coord=[], type="v2") {
     document.getElementById('result').textContent = 'Error: ' + error.message;
   }
 }
+
 
 window.chatApp.updateMap = async function () {
   var coord = await getZoomCoordinates() || [];
@@ -90,8 +99,8 @@ window.chatApp.updateMap = async function () {
   window.chatApp.mapMarkers = [];
 
   window.chatApp.NGSI_entities.forEach(function(entity) {
-    var location = entity.location.value.coordinates;
-    var title = entity.title.value;
+    var location = entity.location.coordinates;
+    var title = entity.title;
     var image = entity.image;
     console.log('title:', title);
 
@@ -102,7 +111,7 @@ window.chatApp.updateMap = async function () {
     var current_marker = L.marker([location[1], location[0]]);
     if(image) {
       var customIcon = L.icon({
-        iconUrl: `./img/${image.value}`,
+        iconUrl: `./img/${image}`,
         iconSize: [50, 50],
         popupAnchor: [0, -25],
         className: 'custom-icon'
@@ -114,25 +123,27 @@ window.chatApp.updateMap = async function () {
   });
 }
 
-
 // Function to log the coordinates of the four corners of the map to the console
 async function getZoomCoordinates () {
   var bounds = map.getBounds();
+  var center = bounds.getCenter();
   var southWest = bounds.getSouthWest();
   var northEast = bounds.getNorthEast();
   var northWest = L.latLng(northEast.lat, southWest.lng);
   var southEast = L.latLng(southWest.lat, northEast.lng);
 
   var coordinates = [southWest.lng, southWest.lat, southEast.lng, southEast.lat, northEast.lng, northEast.lat, northWest.lng, northWest.lat];
-  return coordinates;
+  return {
+    "coord": coordinates,
+    "center": center,
+    "zoom": map.getZoom()
+  };
 }
 })();
 
 
-
-
 window.chatApp.updateMap();
 map.on('moveend', window.chatApp.updateMap);
-
+map.on('keypress', window.chatApp.logKey);
 // Add an event listener to the limit input field to update the PoIs when the limit changes
 //document.getElementById("limit").addEventListener('onchange', window.chatApp.updateMap);
