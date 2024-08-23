@@ -1,0 +1,1976 @@
+[
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:000",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "FIWARE Summit 2024"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 0
+    },
+    "image": {
+      "type": "Property",
+      "value": "fiware.jpg"
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.192927,
+          40.831876
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "The FIWARE Global Summit brings together a passionate community eager to share knowledge, develop impactful solutions, and create a lasting difference in the ecosystem. At the 2024 edition, we continue to build on our collective journey, uniting with industry leaders, innovators, and communities to transform the vast wealth of data into actionable strategies. Together, we are building a future shaped by our shared mission and achievements."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 1000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 681
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:001",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Pompeii Archaeological Site"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 0
+    },
+    "image": {
+      "type": "Property",
+      "value": "pompei.jpg"
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.487198,
+          40.749351
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "16€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Pompeii is a vast archaeological site that once was a thriving Roman city. It was buried under meters of ash after the catastrophic eruption of Mount Vesuvius in 79 A.D."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 30000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 12000
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:002",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Naples National Archaeological Museum"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 0
+    },
+    "image": {
+      "type": "Property",
+      "value": "naples_museum.jpg"
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.251356,
+          40.855622
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "15€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "This museum houses one of the most extensive collections of Greco-Roman antiquities, including the Farnese Marbles and the mosaics from Pompeii."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 5000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 3200
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:003",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Castel dell'Ovo"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 0
+    },
+    "image": {
+      "type": "Property",
+      "value": "castell_ovo.jpg"
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.247297,
+          40.829796
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Castel dell'Ovo is the oldest standing fortification in Naples, offering panoramic views of the Gulf of Naples. It is a symbol of the city and a popular spot for tourists."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 2000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 1300
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:004",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Royal Palace of Naples"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 3
+    },
+    "image": {
+      "type": "Property",
+      "value": "naples_royal_palace.jpg"
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.253093,
+          40.838333
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "10€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "The Royal Palace of Naples is a historic palace that served as a residence for the Spanish and later the Bourbon monarchy. It features lavish interiors and beautiful gardens."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 6000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 2100
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:005",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Catacombs of San Gennaro"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 2
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.247311,
+          40.868643
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "9€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "The Catacombs of San Gennaro are an extensive underground network of early Christian burial sites, rich with frescoes and tombs dating back to the 2nd century A.D."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 3000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 800
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:006",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Piazza del Plebiscito"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.249183,
+          40.836631
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Piazza del Plebiscito is the main square of Naples, surrounded by important landmarks like the Royal Palace and the Church of San Francesco di Paola. It is a cultural and historical hub."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 25000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 5000
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:007",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Teatro di San Carlo"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.249937,
+          40.837436
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "20€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "The Teatro di San Carlo is one of the oldest and most prestigious opera houses in Europe. It is renowned for its exceptional acoustics and historical significance."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 3000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 1500
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:008",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Via San Gregorio Armeno"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 3
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.254683,
+          40.849135
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "This street is famous for its artisan workshops specializing in handcrafted nativity scenes. It is a vibrant part of Naples’ cultural heritage."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 1000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 400
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:009",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Mount Vesuvius"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 0
+    },
+    "image": {
+      "type": "Property",
+      "value": "vesuvius.jpg"
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.426028,
+          40.822383
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "10€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Mount Vesuvius is an iconic volcano, famous for the eruption that destroyed Pompeii. It offers visitors the opportunity to hike to the crater and enjoy stunning views of the Bay of Naples."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 5000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 2300
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:010",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Spaccanapoli"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 2
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.252297,
+          40.850464
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Spaccanapoli is a long, narrow street that cuts through the heart of the historic center of Naples, lined with churches, shops, and cafes. It is one of the most vibrant and characteristic streets in the city."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 5000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 2200
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:011",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Galleria Umberto I"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 2
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.248445,
+          40.837273
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Galleria Umberto I is a public shopping gallery and one of Naples' most famous landmarks, featuring stunning architecture and a vibrant atmosphere."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 2000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 1200
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:012",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Capodimonte Museum"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.250739,
+          40.873692
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "12€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "The Capodimonte Museum houses an extensive collection of Neapolitan art, as well as masterpieces by artists like Raphael, Titian, and Caravaggio."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 3000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 1500
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:013",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Castel Nuovo (Maschio Angioino)"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "image": {
+      "type": "Property",
+      "value": "castell_nuovo.jpg"
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.254413,
+          40.838347
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "6€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Castel Nuovo, also known as Maschio Angioino, is a medieval fortress that stands as a symbol of Naples' history. It now hosts the Civic Museum."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 4000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 1800
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:014",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Naples Underground"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 2
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.252951,
+          40.850616
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "10€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Naples Underground is a fascinating network of tunnels and caves beneath the city, offering a glimpse into Naples' ancient past and its complex history."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 1500
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 900
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:015",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Chiesa del Gesù Nuovo"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.250736,
+          40.847322
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "The Church of Gesù Nuovo is one of the most important Baroque churches in Naples, known for its distinctive facade and richly decorated interior."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 1000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 600
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:016",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Santa Chiara Monastery"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 2
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.249992,
+          40.848184
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "6€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "The Santa Chiara Monastery is a large religious complex famous for its beautiful cloister decorated with hand-painted majolica tiles."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 1500
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 700
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:017",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Certosa di San Martino"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.243017,
+          40.846456
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "8€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "The Certosa di San Martino is a former monastery now functioning as a museum, offering spectacular views over Naples and the Bay of Naples."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 2000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 1000
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:018",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Cappella Sansevero"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.253233,
+          40.847875
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "8€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "The Cappella Sansevero is a small chapel renowned for its stunning Baroque art, including the famous \"Veiled Christ\" sculpture."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 800
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 500
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:019",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Villa Comunale"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 2
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.239456,
+          40.830282
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Villa Comunale is a beautiful seaside park in Naples, ideal for relaxing walks and offering stunning views of the bay. It also hosts the Anton Dohrn Aquarium."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 5000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 1500
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:020",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "San Domenico Maggiore"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.253017,
+          40.849683
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "San Domenico Maggiore is a Gothic church in Naples, notable for its historical significance and its collection of Renaissance artworks."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 1200
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 700
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:021",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Pignasecca Market"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 3
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.248591,
+          40.84673
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Pignasecca is one of Naples' oldest and most vibrant street markets, offering a variety of local foods, fresh produce, and unique souvenirs."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 1000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 500
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:022",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Cimitero delle Fontanelle"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 2
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.252151,
+          40.867059
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "The Fontanelle Cemetery is a unique and eerie ossuary in Naples, known for its collection of thousands of human skulls arranged in a vast cave."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 1500
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 400
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:023",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Museo MADRE"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 2
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.258306,
+          40.854183
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "7€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "The Museo MADRE is a contemporary art museum in Naples, showcasing works by Italian and international artists in a historic building."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 2000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 800
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:024",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Lungomare Caracciolo"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.237565,
+          40.828975
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Lungomare Caracciolo is a scenic promenade along the coast of Naples, offering breathtaking views of the sea, Mount Vesuvius, and Castel dell'Ovo."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 10000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 3000
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:025",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "San Lorenzo Maggiore"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.256087,
+          40.851905
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "9€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "San Lorenzo Maggiore is a historic church and archaeological site, where you can explore ancient Roman and Greek ruins beneath the building."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 1500
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 600
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:026",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Naples Central Station"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 0
+    },
+    "image": {
+      "type": "Property",
+      "value": "train.jpg"
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.271927,
+          40.85216
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Naples Central Station is the main train station of the city, serving as a major transportation hub connecting Naples with other parts of Italy."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 20000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 8000
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:027",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Posillipo Hill"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.207589,
+          40.819216
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Posillipo Hill is a scenic area offering panoramic views of the Bay of Naples and the city. It's a popular spot for tourists and locals alike."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 3000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 1000
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:028",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Via Toledo"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 2
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.247667,
+          40.84611
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Via Toledo is one of Naples' main shopping streets, known for its lively atmosphere, historic buildings, and variety of shops and cafes."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 5000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 2000
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:029",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Palazzo Reale di Capodimonte"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.25,
+          40.874
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "10€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "This historic palace houses the Capodimonte Museum and is surrounded by beautiful gardens. It's a major cultural attraction in Naples."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 4000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 1500
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:030",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Naples Cathedral"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.255123,
+          40.852333
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Naples Cathedral, also known as the Cathedral of the Assumption of Mary, is the main church of Naples and home to the relics of San Gennaro."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 2500
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 1000
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:031",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Palazzo Zevallos Stigliano"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 2
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.248824,
+          40.842352
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "5€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Palazzo Zevallos Stigliano is an art gallery located on Via Toledo, featuring works from the Neapolitan Baroque era, including Caravaggio's \"Martyrdom of Saint Ursula.\""
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 1000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 400
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:032",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Via Chiaia"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 2
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.247593,
+          40.838934
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Via Chiaia is a famous shopping street in Naples, known for its luxury boutiques, elegant cafes, and vibrant atmosphere, linking Piazza del Plebiscito to Piazza dei Martiri."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 3000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 1200
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:033",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Santa Lucia District"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.247328,
+          40.832578
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "The Santa Lucia district is a picturesque area of Naples by the sea, known for its narrow streets, traditional eateries, and views of Castel dell'Ovo."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 5000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 2000
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:034",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "San Gregorio Armeno Church"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.253144,
+          40.849897
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "The Church of San Gregorio Armeno is famous for its Baroque interior and the nearby street, renowned for artisan shops specializing in nativity scenes."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 800
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 300
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:035",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Piazza Bellini"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 3
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.252839,
+          40.849206
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Piazza Bellini is a lively square in Naples, surrounded by historic buildings, cafes, and bars. It's a popular gathering spot, especially for students."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 2000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 800
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:036",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Museum of the Treasure of San Gennaro"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.255038,
+          40.852401
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "6€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "This museum is dedicated to the treasure of San Gennaro, the patron saint of Naples, and includes a stunning collection of religious artifacts."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 1500
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 600
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:037",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Piazza Dante"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 2
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.247276,
+          40.84925
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Piazza Dante is a historic square in Naples, dominated by a large statue of the poet Dante Alighieri. It serves as a major meeting point in the city."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 10000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 4000
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:038",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Orto Botanico di Napoli"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.270042,
+          40.858109
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "4€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "The Botanical Garden of Naples is a peaceful oasis in the city, home to a wide variety of plant species and serving as a center for botanical research."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 2000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 500
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:039",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Piazza Municipio"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 3
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.254158,
+          40.84172
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Piazza Municipio is a large square in front of the Town Hall of Naples, often hosting events and surrounded by important buildings like Castel Nuovo."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 12000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 3000
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:040",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Palazzo Donn'Anna"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 2
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.213758,
+          40.822932
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Palazzo Donn'Anna is an unfinished historic palace on the Posillipo coast, with a fascinating history and beautiful views of the Bay of Naples."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 500
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 100
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:041",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Naples International Airport (Capodichino)"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 0
+    },
+    "image": {
+      "type": "Property",
+      "value": "plane.jpg"
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.291667,
+          40.884445
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Naples International Airport is the main airport serving Naples and the surrounding region, offering both domestic and international flights."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 20000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 12000
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:042",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Caffè Gambrinus"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 2
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.249149,
+          40.837593
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "3€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Caffè Gambrinus is a historic coffeehouse in Naples, known for its elegant interior and as a meeting place for intellectuals, artists, and politicians."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 300
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 150
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:043",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Villa Floridiana"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.2339,
+          40.837811
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "4€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Villa Floridiana is a historic villa and park in the Vomero district, offering a tranquil retreat with beautiful gardens and views of the city."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 2500
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 800
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:044",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Museo Nazionale Ferroviario di Pietrarsa"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 2
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.314745,
+          40.816628
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "7€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "The National Railway Museum of Pietrarsa is dedicated to the history of Italian railways, housed in a former locomotive factory by the sea."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 2000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 500
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:045",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Via dei Tribunali"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 2
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.255063,
+          40.851028
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Via dei Tribunali is a historic street in Naples, lined with ancient churches, pizzerias, and shops, representing the heart of the old city."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 5000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 1800
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:046",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Rione Sanità"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.252892,
+          40.861788
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Rione Sanità is a historic neighborhood in Naples, rich in culture and history, known for its vibrant street life and the beautiful Palazzo Sanfelice."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 8000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 3000
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:047",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Sant'Elmo Castle"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.239453,
+          40.849502
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "5€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Sant'Elmo Castle is a medieval fortress located on a hilltop in Naples, offering panoramic views of the city and serving as a venue for cultural events."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 4000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 1500
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:048",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Molo Beverello"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 2
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.256723,
+          40.841507
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "0€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Molo Beverello is the main port for ferry services to the islands of the Bay of Naples, including Capri, Ischia, and Procida."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 15000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 6000
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:049",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Naples Subway (Art Stations)"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.257982,
+          40.845782
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "1.10€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "The Naples Subway is famous for its \"Art Stations,\" where contemporary artists have transformed ordinary metro stops into public art galleries."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 10000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 4000
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:050",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Vesuvius National Park"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.4289,
+          40.8226
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "10€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Vesuvius National Park surrounds the famous Mount Vesuvius volcano and offers hiking trails, guided tours, and stunning views of the Bay of Naples."
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 10000
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 4000
+    }
+  }
+]

@@ -1,0 +1,30 @@
+You have to complete a CSV (delimiter ;) with these columns for the city of Naples with the most important point of interest. 
+
+You have to include these columns:
+id;type;title;relevance;image;location_type;coordinates;price;description;capacity;occupancy
+
+
+
+
+Id has to have this structure: urn:ngsi-ld:PoI:Naples:{self-incremente number}
+Type is Pol
+Title is the name of the place
+Relevance goes from 0 to 5 0 being very relevant place and 5 being no relevant
+Price: The price 0€ if is free or the price you consider to enter/visit/consume
+Coordinates are the coordinates
+Description is the description of the place
+Capacity is the maximum number of persons
+Occupancy the real-time occupancy (you can invent it)
+
+Here are some examples:
+urn:ngsi-ld:PoI:004;PoI;Museo del Prado;0;;Point;-3.692127,40.41378;15€;El Museo del Prado es el museo más importante de España y uno de los más prestigiosos del mundo. Alberga una extensa colección de obras de arte europeas que datan del siglo XII al siglo XIX. Destacan las pinturas de Velázquez, Goya, El Bosco, Tiziano y Rubens.;1171;870
+urn:ngsi-ld:PoI:176;PoI;Aeropuerto Adolfo Suárez Madrid-Barajas;1;;Point;-3.564481,40.472276;0€;Principal aeropuerto de Madrid, con múltiples conexiones internacionales y servicios para pasajeros.;10000;1500
+urn:ngsi-ld:PoI:693;PoI;Restaurante Plaza Mayor;4;;Point;-3.707381,40.415168;15€;Restaruante situado en la Plaza Mayor, ideal para comprar refrescos, bocadillos y prensa mientras se disfruta del entorno histórico.;30;10
+urn:ngsi-ld:PoI:010;PoI;Puerta del Sol;0;;Point;-3.703834,40.416947;0€;La Puerta del Sol es una de las plazas más famosas de Madrid. Es el kilómetro cero de las carreteras radiales de España y un lugar lleno de vida y actividad. Aquí se encuentra la famosa estatua del Oso y el Madroño, símbolo de la ciudad.;20000;345
+
+
+
+
+Do it in English
+
+Give me only [points of interest that start with A, restaurants, streets, monuments...]

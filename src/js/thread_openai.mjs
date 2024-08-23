@@ -1,4 +1,4 @@
-import './map.js';
+import './map.mjs';
 import OpenAI from 'openai'
 
 window.chatApp = window.chatApp || {};

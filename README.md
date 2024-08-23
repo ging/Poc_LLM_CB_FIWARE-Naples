@@ -26,6 +26,17 @@ cp template.env .env
 # modify OPENAI_API_KEY with your OPENAI_API_KEY 
 ```
 
+### Configure the map
+Modify `.env` with the initial position to be loaded
+
+```
+# MADRID -> 41.65606, -0.87734
+# NAPLES -> 40.85216, 14.26811 
+INITIAL_LATITUDE=40.85216
+INITIAL_LONGITUDE=14.26811
+INITIAL_ZOOM=10
+```
+
 ### Build the POC
 ```
 cd src

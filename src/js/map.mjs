@@ -1,6 +1,9 @@
 // Global object to hold shared state and functions
 window.chatApp = window.chatApp || {};
-let map = L.map('map').setView([40.4168, -3.7038], 13);
+const latitude = process.env.INITIAL_LATITUDE;
+const longitude = process.env.INITIAL_LONGITUDE;
+const zoom = process.env.INITIAL_ZOOM;
+let map = L.map('map').setView([latitude, longitude], zoom);
 window.chatApp.mapMarkers = [];
 
 (function() {

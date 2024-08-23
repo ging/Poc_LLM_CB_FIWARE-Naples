@@ -2,11 +2,11 @@ import csv
 import json
 import sys
 
-def csv_to_ngsild(csv_file, json_file, type="v2"):
+def csv_to_ngsild(csv_file, json_file, type="v2", delimiter=';'):
     entities = []
     
     with open(csv_file, 'r', encoding='utf-8') as csvfile:
-        reader = csv.DictReader(csvfile)
+        reader = csv.DictReader(csvfile, delimiter=delimiter)
         
         for row in reader:
             entity = {
