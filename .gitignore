@@ -1,5 +1,7 @@
 map_madrid/
+map/
 node_modules/
 bundle_chatbot.js
 config.js
 .DS_Store
+.env

@@ -1,10 +1,10 @@
 // Global object to hold shared state and functions
 window.chatApp = window.chatApp || {};
-var map = L.map('map').setView([40.4168, -3.7038], 13);
+let map = L.map('map').setView([40.4168, -3.7038], 13);
 window.chatApp.mapMarkers = [];
 
 (function() {
-var NGSI_entities = []
+let NGSI_entities = []
 
 // Add your custom PBF tiles using Leaflet.VectorGrid
 L.tileLayer('http://localhost:8080/styles/basic-preview/{z}/{x}/{y}.png', {
@@ -13,10 +13,10 @@ L.tileLayer('http://localhost:8080/styles/basic-preview/{z}/{x}/{y}.png', {
 
 
 window.chatApp.getPoIs = async function(coord=[], fiwareService="ld") {
-  var query="";
-  var limit = document.getElementById("limit").value;
-  var orion_port = '1026'; //fiwareService === "v2" ? "1025" : "1026";
-  var orion_url = 'http://localhost:1027/http://fiware-orion-' + fiwareService + ':' + orion_port;
+  let query="";
+  let limit = document.getElementById("limit").value;
+  let orion_port = '1026'; //fiwareService === "v2" ? "1025" : "1026";
+  let orion_url = 'http://localhost:1027/http://fiware-orion-' + fiwareService + ':' + orion_port;
 
   console.log('query con limit: ', limit);
 
@@ -24,8 +24,8 @@ window.chatApp.getPoIs = async function(coord=[], fiwareService="ld") {
   // https://stackoverflow.com/questions/75106624/ordering-results-by-field-using-orion-ngsi-ld
   // however, there is a new commit under request that solves this issue:
   // https://github.com/FIWARE/context.Orion-LD/pull/1656/commits/0bf03678877a54000f8cc6520975ab5bf65838d5
-  var orderBy = "relevance";
-  var url = orion_url + '/ngsi-ld/v1/entities?local=true&type=PoI&options=concise&limit=' + limit + '&orderBy=' + orderBy;
+  let orderBy = "relevance";
+  let url = orion_url + '/ngsi-ld/v1/entities?local=true&type=PoI&options=concise&limit=' + limit + '&orderBy=' + orderBy;
 
   if(coord) {
     coord = await getZoomCoordinates();
@@ -34,7 +34,7 @@ window.chatApp.getPoIs = async function(coord=[], fiwareService="ld") {
 
   // Constructing the coordinates string for LD
   coord = coord.coord;
-  var coordinates = [[
+  let coordinates = [[
     [coord[0], coord[1]],
     [coord[2], coord[3]],
     [coord[4], coord[5]],
@@ -85,13 +85,13 @@ window.chatApp.getPoIs = async function(coord=[], fiwareService="ld") {
 
 
 window.chatApp.updateMap = async function () {
-  var coord = await getZoomCoordinates() || [];
+  let coord = await getZoomCoordinates() || [];
   window.chatApp.NGSI_entities = await window.chatApp.getPoIs(coord);
 
   // Remove all markers from the map
   if (window.chatApp.mapMarkers !== undefined) {
     console.log('removing markers, size: ' + window.chatApp.mapMarkers.length);
-    for (var i = 0; i < window.chatApp.mapMarkers.length; i++) {
+    for (let i = 0; i < window.chatApp.mapMarkers.length; i++) {
       console.log('removing marker: ' + window.chatApp.mapMarkers[i]);
       map.removeLayer(window.chatApp.mapMarkers[i]);
     }
@@ -99,18 +99,18 @@ window.chatApp.updateMap = async function () {
   window.chatApp.mapMarkers = [];
 
   window.chatApp.NGSI_entities.forEach(function(entity) {
-    var location = entity.location.coordinates;
-    var title = entity.title;
-    var image = entity.image;
+    let location = entity.location.coordinates;
+    let title = entity.title;
+    let image = entity.image;
     console.log('title:', title);
 
     // Add a marker to the map in the location of the entity
     // this is reversed beceause the coordinates are in the format [longitude, latitude]
     // and Leaflet expects [latitude, longitude]
     // See: https://datatracker.ietf.org/doc/html/rfc7946
-    var current_marker = L.marker([location[1], location[0]]);
+    let current_marker = L.marker([location[1], location[0]]);
     if(image) {
-      var customIcon = L.icon({
+      let customIcon = L.icon({
         iconUrl: `./img/${image}`,
         iconSize: [50, 50],
         popupAnchor: [0, -25],
@@ -125,14 +125,14 @@ window.chatApp.updateMap = async function () {
 
 // Function to log the coordinates of the four corners of the map to the console
 async function getZoomCoordinates () {
-  var bounds = map.getBounds();
-  var center = bounds.getCenter();
-  var southWest = bounds.getSouthWest();
-  var northEast = bounds.getNorthEast();
-  var northWest = L.latLng(northEast.lat, southWest.lng);
-  var southEast = L.latLng(southWest.lat, northEast.lng);
+  let bounds = map.getBounds();
+  let center = bounds.getCenter();
+  let southWest = bounds.getSouthWest();
+  let northEast = bounds.getNorthEast();
+  let northWest = L.latLng(northEast.lat, southWest.lng);
+  let southEast = L.latLng(southWest.lat, northEast.lng);
 
-  var coordinates = [southWest.lng, southWest.lat, southEast.lng, southEast.lat, northEast.lng, northEast.lat, northWest.lng, northWest.lat];
+  let coordinates = [southWest.lng, southWest.lat, southEast.lng, southEast.lat, northEast.lng, northEast.lat, northWest.lng, northWest.lat];
   return {
     "coord": coordinates,
     "center": center,

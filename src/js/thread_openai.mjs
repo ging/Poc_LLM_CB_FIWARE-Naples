@@ -1,16 +1,15 @@
-import { OPENAI_API_KEY } from './config.js';
 import './map.js';
 import OpenAI from 'openai'
 
 window.chatApp = window.chatApp || {};
 
 const openai = new OpenAI({
-  apiKey: OPENAI_API_KEY,
+  apiKey: process.env.OPENAI_API_KEY,
   dangerouslyAllowBrowser: true
 })
 
 export async function createThreadAssistant() {
-  var monuments = await window.chatApp.getPoIs() // Get the PoIs from the map
+  let monuments = await window.chatApp.getPoIs() // Get the PoIs from the map
   const thread = await openai.beta.threads.create({})
 
   //console.log('Thread has been created: ', thread)
@@ -32,22 +31,22 @@ export async function createThreadAssistant() {
 }
 
 export async function sendMessage(threadId, assistantId, userMessage, additionalContext = []) {
-  var end = 0;
-  var duration = [];
-  var durationOAI = [];
-  var waiting = 0;
+  let end = 0;
+  let duration = [];
+  let durationOAI = [];
+  let waiting = 0;
 
   // Start time measure for CB call
   console.time("Orion CB");
   const start = performance.now(); // see https://dev.to/saranshk/how-to-measure-javascript-execution-time-5h2
-  var zoomedEntities = await window.chatApp.getPoIs();
+  let zoomedEntities = await window.chatApp.getPoIs();
   const endCB = performance.now();
   console.timeEnd("Orion CB");
   console.log("Duration CB: " + (endCB-start) + " ms");
   // End call to CB and time measure
 
 
-  var new_instructions = `. Please, take only into consideration the following points of interest when giving advices: \
+  let new_instructions = `. Please, take only into consideration the following points of interest when giving advices: \
                           ${JSON.stringify(zoomedEntities)}.\
                           Otherwise, just say that you can't find anything.`;
   console.log('-> Sending message to thread: ', new_instructions);
