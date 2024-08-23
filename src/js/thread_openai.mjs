@@ -32,13 +32,21 @@ export async function createThreadAssistant() {
 }
 
 export async function sendMessage(threadId, assistantId, userMessage, additionalContext = []) {
-  const start = performance.now(); // see https://dev.to/saranshk/how-to-measure-javascript-execution-time-5h2
   var end = 0;
   var duration = [];
   var durationOAI = [];
+  var waiting = 0;
 
-
+  // Start time measure for CB call
+  console.time("Orion CB");
+  const start = performance.now(); // see https://dev.to/saranshk/how-to-measure-javascript-execution-time-5h2
   var zoomedEntities = await window.chatApp.getPoIs();
+  const endCB = performance.now();
+  console.timeEnd("Orion CB");
+  console.log("Duration CB: " + (endCB-start) + " ms");
+  // End call to CB and time measure
+
+
   var new_instructions = `. Please, take only into consideration the following points of interest when giving advices: \
                           ${JSON.stringify(zoomedEntities)}.\
                           Otherwise, just say that you can't find anything.`;
@@ -55,11 +63,10 @@ export async function sendMessage(threadId, assistantId, userMessage, additional
     instructions: new_instructions,
   })
 
-  console.log('Run has been created: ', run)
-
   const checkRun = async () => {
+    console.time("OpenAI");
+    const startOpenAI = performance.now();
     return new Promise((resolve, reject) => {
-      const startOpenAI = performance.now();
       const interval = setInterval(async () => {
         const retrieveRun = await openai.beta.threads.runs.retrieve(
           threadId,
@@ -72,9 +79,14 @@ export async function sendMessage(threadId, assistantId, userMessage, additional
           durationOAI.push(end-startOpenAI); // in milliseconds
           console.log("Duration total: " + duration + " ms");
           console.log("Duration only OpenAI call: " + durationOAI + " ms");
+          console.timeEnd("OpenAI");
+          console.log("Waiting: " + waiting);
           clearInterval(interval)
           clearInterval(interval)
           resolve(retrieveRun)
+        }
+        else {
+          waiting += 1
         }
       }, 300)
     })
