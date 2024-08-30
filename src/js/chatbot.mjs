@@ -26,14 +26,40 @@ const createChatLi = (message, className) => {
 	return chatLi;
 }
 
+async function logStats(stats, endpoint="http://localhost:8000/stats") {
+  console.log('Sending to URL...: ', endpoint);
+  console.log('*** Sending stats JSON...: ', stats);
+  try {
+    const response =
+      await fetch(
+        endpoint,
+        {
+            method: 'POST',
+            mode: 'cors',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(stats), // Convert object to JSON string
+        })
+        if (!response.ok) {
+            console.log('!!! Error sending stats: ' + response.status + ' ' + response.statusText);
+        }
+    } catch (error) {
+        console.log('There has been a problem with your fetch operation:', error);
+    }
+}
+
 const generateResponse = async (incomingChatLi) => {
 	const messageElement = incomingChatLi
 	.querySelector("p");
     
 	try {
 		console.log(`Sending message...⏳ ${userMessage}`);
-		const response = await sendMessage(thread.id, assistant.id, userMessage);
-		console.log('Message sent! ✅');
+		let response = await sendMessage(thread.id, assistant.id, userMessage);
+		const response_to_log = response;
+		logStats(response_to_log);
+		console.log('**** Response IS: ', response);
+		response = response.response;
 		messageElement.textContent = response;
 	} catch(error) {
 		console.log('error:', error)

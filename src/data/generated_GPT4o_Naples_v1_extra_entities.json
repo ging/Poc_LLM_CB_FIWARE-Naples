@@ -1,0 +1,282 @@
+[
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:999",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Cusamè"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "image": {
+      "type": "Property",
+      "value": "cusame.png"
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.41667,
+          40.88333
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "25-150€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Cusamè, healthy Mediterranean cuisine!😋 We are inside Edenlandia🎠"
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 55
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 50
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:998",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Carnè - Salvatore Di Napoli"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "image": {
+      "type": "Property",
+      "value": "carne_salvatore.jpg"
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.1774447,
+          40.8175061
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "20-100€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "For years we have been committed to selecting fine meat! For info you can send a message on W.app"
+    },
+    "capacity": {
+      "type": "Property",
+      "value": 35
+    },
+    "occupancy": {
+      "type": "Property",
+      "value": 25
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:997",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Trattoria da Vittorio"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 1
+    },
+    "image": {
+      "type": "Property",
+      "value": "trattoria_vittorio.jpg"
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.1867576,
+          40.8206008
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "10-50€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Cucina Tipica Da Vittorio Napoli is a Neapolitan restaurant located at Via Diocleziano, 69/B, Naples, Metropolitan City of Naples  80124, IT. It is listed under Neapolitan restaurant, Down home cooking restaurant, Italian restaurant category. It has received 401 reviews with an average rating of 4.3 stars. Their services include Takeout, Dine-in ."
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:996",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Pizzeria da Mario"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 2
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.1761216,
+          40.8243577
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "8-40€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Takeaway one of the best Neapolitan pizza"
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:995",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "One Sushi"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 2
+    },
+    "image": {
+      "type": "Property",
+      "value": "one_sushi.jpg"
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.192605,
+          40.8238765
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "12-90€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Find Japanese food in the hearth of Napoli. Takeaway or on site!"
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:994",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Lala Noodles - Asian Street Food"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 2
+    },
+    "image": {
+      "type": "Property",
+      "value": "lalala_asian_food.jpg"
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.2048755,
+          40.8271113
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "15-40€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Serves meat, vegan options available. Small Asian restaurant with vegan choices. Separate vegan menu includes vegan bao, spring rolls, poke bowl, vegetable gyoza and more. Open Mon-Sat 12:00-15:00, Mon-Sun 18:00-23:00."
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:993",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "Taco's Agnano"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 2
+    },
+    "image": {
+      "type": "Property",
+      "value": "tacos.jpeg"
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.2861215,
+          40.9445249
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "8-25€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Located in southern Naples, this Mexican taco restaurant offers authentic flavors and a vibrant atmosphere. Enjoy traditional tacos with fresh ingredients, bringing the essence of Mexico to your plate."
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:PoI:Naples:992",
+    "type": "PoI",
+    "title": {
+      "type": "Property",
+      "value": "African food"
+    },
+    "relevance": {
+      "type": "Property",
+      "value": 2
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          14.3861215,
+          40.8745249
+        ]
+      }
+    },
+    "price": {
+      "type": "Property",
+      "value": "15-50€"
+    },
+    "description": {
+      "type": "Property",
+      "value": "Located in southern Naples, this African restaurant offers authentic flavors in a cozy and inviting setting. Enjoy traditional dishes crafted with fresh, aromatic ingredients that bring the rich and diverse culinary heritage of Africa straight to your table."
+    }
+  }
+]

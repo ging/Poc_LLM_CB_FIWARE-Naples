@@ -19,8 +19,8 @@
       "value": {
         "type": "Point",
         "coordinates": [
-          14.192927,
-          40.831876
+          14.185766,
+          40.82587
         ]
       }
     },
@@ -30,7 +30,7 @@
     },
     "description": {
       "type": "Property",
-      "value": "The FIWARE Global Summit brings together a passionate community eager to share knowledge, develop impactful solutions, and create a lasting difference in the ecosystem. At the 2024 edition, we continue to build on our collective journey, uniting with industry leaders, innovators, and communities to transform the vast wealth of data into actionable strategies. Together, we are building a future shaped by our shared mission and achievements."
+      "value": "The FIWARE Global Summit brings together a passionate community eager to share knowledge, develop impactful solutions, and create a lasting difference in the ecosystem. At the 2024 edition, we continue to build on our collective journey, uniting with industry leaders, innovators, and communities to transform the vast wealth of data into actionable strategies. Together, we are building a future shaped by our shared mission and achievements. The FGS2024 is located in 54 Viale John Fitzgerald Kennedy 80125 Napoli Italy."
     },
     "capacity": {
       "type": "Property",
