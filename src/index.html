@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>POC Madrid LLM</title>
+  <title>PoC Tourism: FIWARE + LLM</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<h1>PoC Madrid FIWARE + LLM</h1>
+<h1>PoC Tourism: FIWARE + LLM</h1>
 
 <div class="container">
   <!-- HTML element to hold the map -->
@@ -32,21 +32,29 @@
   <div class="config">
     <div class="slider">
       <label for="limit">Limit:</label>
-      <input type="range" id="limit" name="limit" min="1" max="1000" value="10" onchange=window.chatApp.updateMap()>
-      <span id="limitValue">10</span>
+      <input type="range" id="limit" name="limit" min="1" max="1000" value="20" onchange=window.chatApp.updateMap()>
+      <span id="limitValue"></span>
     </div>
   </div>
   
 </div>
 
 <!-- JavaScript -->
-<script>
+<script type="text/javascript">
   function updateLimitValue() {
     var limit = document.getElementById("limit").value;
     document.getElementById("limitValue").innerHTML = limit;
   }
 
+  function setLimitValue(value=10) {
+    document.getElementById("limit").value = value;
+    document.getElementById("limitValue").innerHTML = value;
+  }
+
   document.getElementById("limit").addEventListener("input", updateLimitValue);
+  document.addEventListener("DOMContentLoaded", function() {
+    setLimitValue(20);
+  });
 </script>
 
 
