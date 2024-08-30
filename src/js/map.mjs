@@ -21,7 +21,6 @@ window.chatApp.getPoIs = async function(coord=[], fiwareService="ld") {
   let orion_port = '1026'; //fiwareService === "v2" ? "1025" : "1026";
   let orion_url = 'http://localhost:1027/http://fiware-orion-' + fiwareService + ':' + orion_port;
 
-  console.log('query con limit: ', limit);
 
   // NGSILD doesn't support ordering. See:
   // https://stackoverflow.com/questions/75106624/ordering-results-by-field-using-orion-ngsi-ld
@@ -78,7 +77,10 @@ window.chatApp.getPoIs = async function(coord=[], fiwareService="ld") {
     if (!response.ok) {
         throw new Error('Network response was not ok. Status: ' + response.status + ' ' + response.statusText);
     }
-    NGSI_entities = await response.json();
+    NGSI_entities = {
+      "coord": coord,
+      "entities": await response.json()
+    };
     return NGSI_entities;
   } catch (error) {
     console.error('There has been a problem with your fetch operation:', error);
@@ -93,7 +95,6 @@ window.chatApp.updateMap = async function () {
 
   // Remove all markers from the map
   if (window.chatApp.mapMarkers !== undefined) {
-    console.log('removing markers, size: ' + window.chatApp.mapMarkers.length);
     for (let i = 0; i < window.chatApp.mapMarkers.length; i++) {
       console.log('removing marker: ' + window.chatApp.mapMarkers[i]);
       map.removeLayer(window.chatApp.mapMarkers[i]);
@@ -101,11 +102,10 @@ window.chatApp.updateMap = async function () {
   }
   window.chatApp.mapMarkers = [];
 
-  window.chatApp.NGSI_entities.forEach(function(entity) {
+  window.chatApp.NGSI_entities.entities.forEach(function(entity) {
     let location = entity.location.coordinates;
     let title = entity.title;
     let image = entity.image;
-    console.log('title:', title);
 
     // Add a marker to the map in the location of the entity
     // this is reversed beceause the coordinates are in the format [longitude, latitude]

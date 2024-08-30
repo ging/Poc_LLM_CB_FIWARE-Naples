@@ -98,7 +98,23 @@ export async function sendMessage(threadId, assistantId, userMessage, additional
   const answer = (messages.data ?? []).find((m) => m?.role === 'assistant')
     ?.content?.[0]
 
-  console.log('Answer: ', answer.text.value)
-
-  return answer.text.value; // Return the response from the assistant
+  return {
+    //_complete_message: messages,
+    //_complete_answer: answer,
+    model: model,
+    coordinates: zoomedEntities.coord,
+    zoomedEntities: zoomedEntities.entities.map(
+      it => it.id
+    ),
+    limit: document.getElementById("limit").value,
+    assistantInstructions: instructions,
+    extraInstructions: extraInstructions,
+    prompt: userMessage,
+    response: answer.text.value,
+    durationCB: endCB-start,
+    durationOAI: durationOAI,
+    duration: duration,
+    waiting: waiting,
+  }
+  //return answer.text.value; // Return the response from the assistant
 }
