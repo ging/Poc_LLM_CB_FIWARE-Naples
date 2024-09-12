@@ -61,4 +61,10 @@ cd src/data
 
 Open index.html and start playing...
 
-![Screenshot](./img/screen1.jpeg)
+
+
+
+
+https://github.com/user-attachments/assets/b5c6375b-6fb8-45ee-bf65-7447f01a658c
+
+
